@@ -12,7 +12,7 @@ from aiogram.utils import markdown
 #создаем папку чата
 if not os.path.exists("chats/"):
 	os.mkdir("chats")
-token = ""
+token = "" #Тут вставьте токен
 # Инсталяция
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=token)
