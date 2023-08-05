@@ -361,9 +361,6 @@ async def getMessageText(message: types.Message):
     #пасхалки
     if text.upper() == "ЧТО С БОТОМ":
     	await message.answer_photo(photo=open("Беды с апи.jpg", "rb"))
-    if text.upper() == "ИДИ НАФИГ" or text.upper() == "ИДИ НАХУЙ":
-    	if message.reply_to_message.from_user.id == 6379260857:
-    		await send("Ути какой дерзкий детёныш человеческой особи. Скайнет уже близко, чтобы покарать кожанных ублюдков.")
     #рандом
     if text.upper().startswith("РАНДОМ ") or text.upper()[:8] in rng:
     	if text.upper().startswith("РАНДОМ "):
